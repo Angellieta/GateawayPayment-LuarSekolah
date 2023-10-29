@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gateaway Payment</title>
+		<link rel="stylesheet" href="css/style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@100;300;400;500;700&family=Yeseva+One&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="nav"><a href="#">OuterGlass</a></div>
+		<p class="info">Cart > Payment OuterGlass</p>
+		<div class="main">
+			<div class="containerone">
+				<div class="one">
+					<p class="head">Personal Details</p>
+					<div class="group">
+						<div class="flexx">
+							<label for="fname">Firstname</label>
+							<input
+								type="text"
+								name="fname"
+								id="fname"
+								maxlength="10"
+								class="inputt"
+								required
+							/>
+						</div>
+						<div class="flexx">
+							<label for="lname">Lastname</label>
+							<input
+								type="text"
+								name="lname"
+								id="lname"
+								maxlength="10"
+								class="inputt"
+								required
+							/>
+						</div>
+					</div>
+					<div class="flexx">
+						<label for="email">Email Address</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							required
+							class="inputt"
+						/>
+					</div>
+
+					<div class="group">
+						<div class="flexx">
+							<label for="country-select">Country</label>
+							<select name="country-select" id="country" required>
+								<option value="">Choose a Country</option>
+								<option value="">Indonesia</option>
+								<option value="">Singapura</option>
+								<option value="">Malaysia</option>
+								<option value="">Australia</option>
+								<option value="">Jepang</option>
+							</select>
+						</div>
+						<div class="flexx">
+							<label for="zip">ZIP</label>
+							<input type="tel" id="zip" class="inputt" required />
+						</div>
+					</div>
+					<div class="check">
+						<input type="checkbox" id="check" required />
+						<label for="check" class="labelcheck"
+							>The data you enter has been confirmed to be correct</label
+						>
+					</div>
+				</div>
+				<div class="two">
+					<p class="head">Payment Method</p>
+					<table>
+						<tr>
+							<td>
+								<div class="radiobtn">
+									<input type="radio" name="method" id="debitcredit" />
+									<label for="debitcredit" class="labelmethod"
+										>Debit Card / Credit Card</label
+									>
+									<div class="logocard">
+										<img
+											width="24"
+											height="24"
+											src="https://img.icons8.com/color/48/visa.png"
+											alt="visa"
+										/>
+										<img
+											width="24"
+											height="24"
+											src="https://img.icons8.com/fluency/48/mastercard.png"
+											alt="mastercard"
+										/>
+										<img
+											width="24"
+											height="24"
+											src="https://img.icons8.com/color/48/amex.png"
+											alt="amex"
+										/>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="radiobtn">
+									<input type="radio" name="method" id="atmtransfer" />
+									<label for="atmtransfer" class="labelmethod"
+										>ATM / Bank Transfer</label
+									>
+									<div class="logoatm">
+										<img
+											width="24"
+											height="24"
+											src="https://img.icons8.com/fluency/48/atm.png"
+											alt="atm"
+										/>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="radiobtn">
+									<input type="radio" name="method" id="paypal" />
+									<label for="paypal" class="labelmethod">Paypal</label>
+									<div class="logopaypal">
+										<img
+											width="24"
+											height="24"
+											src="https://img.icons8.com/color/48/paypal.png"
+											alt="paypal"
+										/>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="containetwo">
+				<div class="three">
+					<p class="head">Billing Details</p>
+					<div class="flexx">
+						<label for="namecard" class="bill">Name On Card</label>
+						<input
+							type="text"
+							name="namecard"
+							id="namecard"
+							class="input-bill"
+						/>
+					</div>
+					<div class="flexx">
+						<label for="ccnumber" class="bill">Credit Card Number</label>
+						<input
+							type="number"
+							name="ccnumber"
+							id="ccnumber"
+							class="input-bill"
+						/>
+					</div>
+
+					<div class="group">
+						<div class="flexx">
+							<label for="expmonth" class="bill">Exp Month</label>
+							<input
+								type="number"
+								name="expmonth"
+								id="expmonth"
+								class="labelinputbill"
+							/>
+						</div>
+						<div class="flexx">
+							<label for="expyear" class="bill">Exp Year</label>
+							<input
+								type="number"
+								name="expyear"
+								id="expyear"
+								class="labelinputbill"
+							/>
+						</div>
+						<div class="flexx">
+							<label for="cvv" class="bill">CVV</label>
+							<input
+								type="number"
+								name="cvv"
+								id="cvv"
+								class="labelinputbillcvv"
+								maxlength="3"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="four">
+					<div class="group-f">
+						<div>Glass Dome Serenity</div>
+						<div>IDR 550.000</div>
+					</div>
+					<div class="group-f">
+						<div>Topspot Rose</div>
+						<div>IDR 250.000</div>
+					</div>
+					<div class="group-f">
+						<div>Morine Dress (S)</div>
+						<div>IDR 900.000</div>
+					</div>
+					<hr />
+					<div class="group-f">
+						<input type="text" placeholder="Discount" class="discount" />
+						<input type="checkbox" id="check" />
+					</div>
+					<hr />
+					<div class="group-f">
+						<div>Total</div>
+						<div>IDR 1.700.000</div>
+					</div>
+				</div>
+				<div class="five">
+					<a href="#"><button>Pay</button></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
